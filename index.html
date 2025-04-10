@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
 </head>
 <body>
     <header>
@@ -41,7 +43,7 @@
             <div class="container">
                 <h2>Hvem er vi?</h2>
                 <div class="intro-content">
-                    <img src="succesfuldt-team.jpg" alt="Team Image" class="intro-image">
+                    <img src="img/succesfuldt-team.jpg" alt="Team Image" class="intro-image">
                     <div class="intro-text">
                         <p>Vi er et firma med rødder i gymnastikken – og et brændende ønske om at dele vores viden og passion for bevægelse, trivsel og udvikling. Vores mission er at inspirere og motivere mennesker til at opnå deres fulde potentiale gennem skræddersyede coachingforløb.</p>
                         <p>Med mange års erfaring tilbyder vi unikke forløb, der fremmer både fysisk og mental sundhed. Vi tror på styrken i fællesskab og personlig udvikling.</p>
@@ -110,7 +112,6 @@
                 <h2>Er du klar til at tage næste skridt?</h2>
                 <div class="cta-buttons">
                     <a href="#kontakt" class="cta-button">Book en tid</a>
-                    <a href="#kontakt" class="secondary-button">Kontakt os</a>
                 </div>
             </div>
         </section>
@@ -118,7 +119,7 @@
         <!-- YDELSER - detaljeret -->
         <section id="ydelser-detaljer" class="services-detail">
             <div class="container">
-                <h2>Det vi tilbyder</h2>
+                <h2 style = 'margin-bottom: 2rem;'>Det vi tilbyder</h2>
                 <p>Uanset om du er enkeltperson, forening, skole eller virksomhed – så tilbyder vi et forløb, der passer til dine behov.</p>
 
                 <div class="service-detail">
@@ -160,17 +161,66 @@
         <!-- OM OS -->
         <section id="omos" class="about">
             <div class="container">
-                <h2>Om os</h2>
-                <p>Vi startede med gymnastikken – og har gennem årene udviklet os til at favne mere. Vores mål er at hjælpe mennesker og grupper med at vokse – både fysisk og mentalt.</p>
+                <h2 style = 'margin-bottom: 2rem;'>Om os</h2>
+                <p style='margin-bottom: 1rem; text-align: center;'>
+                    Vi er passionerede omkring at hjælpe mennesker med at udvikle sig – både fysisk og mentalt – gennem bevægelse, coaching og fællesskab. Vores arbejde bygger på en stærk tro på, at motion og relationer kan være nøglen til personlig trivsel og styrke, uanset om man er individuel udøver, en del af en forening eller en virksomhed.
+                </p>
+                <p style='margin-bottom: 1rem; text-align: center;'>
+                    Hos os handler det ikke kun om træning, men om at skabe rammer, hvor mennesker får mulighed for at vokse. Vi arbejder med hele mennesket og tror på, at både krop og sind skal med, når vi udvikler os. Gennem coaching, undervisning og workshops hjælper vi både børn, unge og voksne med at finde motivation, glæde og balance i hverdagen.
+                </p>
+                <p style='margin-bottom: 1rem; text-align: center;'>
+                    Vi favner bredt – fra gymnastikforeninger og idrætsklubber til skoler, institutioner og virksomheder – men fælles for alle vores forløb er, at de er præget af faglighed, nærvær og bevægelsesglæde. Vi møder mennesker der, hvor de er, og skaber meningsfulde forløb med fokus på fællesskab, trivsel og udvikling.
+                </p>
 
                 <div class="values-list">
-                    <h3>Værdier</h3>
-                    <ul>
-                        <li><i class="fas fa-lightbulb"></i> Faglighed</li>
-                        <li><i class="fas fa-handshake"></i> Fællesskab</li>
-                        <li><i class="fas fa-brain"></i> Mental trivsel</li>
-                        <li><i class="fas fa-running"></i> Bevægelsesglæde</li>
-                    </ul>
+                    <h3 class='h3'>Vores værdier</h3>
+                    <sl-carousel pagination loop navigation >
+                        <sl-carousel-item>
+                            <div class='card-carousel'>
+                                <div class="info">
+                                    <div class='card-title'><i class="fas fa-lightbulb"></i> <h4>Faglighed</h4></div>
+                                    <p>Vi bygger vores arbejde på et stærkt fundament af erfaring og viden – især fra gymnastikkens verden, hvor teknik, disciplin og pædagogik går hånd i hånd. Vores forløb er baseret på gennemprøvede metoder, men vi er også nysgerrige og i konstant udvikling. Det betyder, at du som deltager får kvalitet og nærvær – hver gang.</p>
+                            </div>
+                            <div class="img">
+                                <img src="img/Website-meet-our-trainers-1024x576.png" alt="">
+                            </div>
+                            </div>
+                        </sl-carousel-item>
+                        <sl-carousel-item>
+                            <div class='card-carousel'>
+                                <div class="info">
+                                    <div class='card-title'><i class="fas fa-handshake"></i> <h4>Fællesskab</h4></div>
+                                    <p>Relationer er kernen i alt, vi laver. Uanset om vi arbejder med en enkeltperson, et hold eller en virksomhed, så er vores mål at styrke fællesskabet og skabe trygge rammer for udvikling. Vi tror på, at trivsel og resultater vokser bedst i fællesskab med andre – og det er det, vi dyrker.</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/fC3A6llesskab.png" alt="">
+                                </div>
+                            </div>
+                        </sl-carousel-item>
+                        <sl-carousel-item>
+                            <div class="card-carousel">
+                                <div class='info'>
+                                    <div class='card-title'><i class="fas fa-brain"></i> <h4>Mental trivsel</h4></div>
+                                    <p>Træning og udvikling handler ikke kun om kroppen – men i høj grad også om hovedet. Derfor har vi altid fokus på det mentale aspekt, hvad enten det handler om motivation, selvtillid eller balance i hverdagen. Vi møder mennesker i øjenhøjde og skaber plads til refleksion og ro i en travl verden.</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/mental-health-reasons.png" alt="">
+                                </div>
+                            </div>
+                            
+                        </sl-carousel-item>
+                        <sl-carousel-item>
+                            <div class=" card-carousel">
+                                <div class='info'>
+                                    <div class='card-title'><i class="fas fa-running"></i> <h4>Bevægelsesglæde</h4></div>
+                                    <p>Vi elsker bevægelse – ikke kun som træning, men som en måde at udtrykke sig, finde energi og mærke livsglæde. Uanset niveau og baggrund skal bevægelse føles godt, og det er den oplevelse, vi forsøger at give videre. Det handler ikke om præstation – det handler om lyst.</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/hvad-er-motion-gladhud-nu_7262309d-c6d8-4b0c-89dc-7bdd2ec1bfcb.png" alt="">
+                                </div>
+                            </div>
+                        </sl-carousel-item>
+                    </sl-carousel>
                 </div>
 
                 <div class="team">
