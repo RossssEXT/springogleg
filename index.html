@@ -87,20 +87,32 @@
             <div class="container">
                 <h2>Hvad gør os unikke?</h2>
                 <ul>
-                    <li>
+                    <li class=''>
+
+
                         <i class="fas fa-handshake"></i>
-                        <span>Fællesskab</span>
+                        <span>Fællesskab</span> 
+
                         <p>Vi bygger stærke relationer og fremmer samarbejde i alle vores aktiviteter.</p>
+
                     </li>
-                    <li>
+                    <li class='center'>
+
+
                         <i class="fas fa-heart"></i>
                         <span>Mental Sundhed</span>
+
                         <p>Vi prioriterer mental trivsel og tilbyder støtte til personlig udvikling.</p>
+
                     </li>
-                    <li>
+                    <li class=''>
+           
+
                         <i class="fas fa-running"></i>
                         <span>Bevægelsesglæde</span>
+
                         <p>Vi inspirerer til en aktiv livsstil med fokus på glæde ved bevægelse.</p>
+
                     </li>
                 </ul>
             </div>
@@ -120,7 +132,7 @@
         <section id="ydelser-detaljer" class="services-detail">
             <div class="container">
                 <h2 style = 'margin-bottom: 2rem;'>Det vi tilbyder</h2>
-                <p>Uanset om du er enkeltperson, forening, skole eller virksomhed – så tilbyder vi et forløb, der passer til dine behov.</p>
+                <p class='subtitle'>Uanset om du er enkeltperson, forening, skole eller virksomhed – så tilbyder vi et forløb, der passer til dine behov.</p>
 
                 <div class="service-detail">
                     <h3><i class="fas fa-user"></i> Individualister</h3>
@@ -162,13 +174,13 @@
         <section id="omos" class="about">
             <div class="container">
                 <h2 style = 'margin-bottom: 2rem;'>Om os</h2>
-                <p style='margin-bottom: 1rem; text-align: center;'>
+                <p style='margin-bottom: 1rem; text-align: center; font-size: 1.2rem;'>
                     Vi er passionerede omkring at hjælpe mennesker med at udvikle sig – både fysisk og mentalt – gennem bevægelse, coaching og fællesskab. Vores arbejde bygger på en stærk tro på, at motion og relationer kan være nøglen til personlig trivsel og styrke, uanset om man er individuel udøver, en del af en forening eller en virksomhed.
                 </p>
-                <p style='margin-bottom: 1rem; text-align: center;'>
+                <p style='margin-bottom: 1rem; text-align: center; font-size: 1.2rem;'>
                     Hos os handler det ikke kun om træning, men om at skabe rammer, hvor mennesker får mulighed for at vokse. Vi arbejder med hele mennesket og tror på, at både krop og sind skal med, når vi udvikler os. Gennem coaching, undervisning og workshops hjælper vi både børn, unge og voksne med at finde motivation, glæde og balance i hverdagen.
                 </p>
-                <p style='margin-bottom: 1rem; text-align: center;'>
+                <p style='margin-bottom: 1rem; text-align: center; font-size: 1.2rem;'>
                     Vi favner bredt – fra gymnastikforeninger og idrætsklubber til skoler, institutioner og virksomheder – men fælles for alle vores forløb er, at de er præget af faglighed, nærvær og bevægelsesglæde. Vi møder mennesker der, hvor de er, og skaber meningsfulde forløb med fokus på fællesskab, trivsel og udvikling.
                 </p>
 
@@ -224,8 +236,27 @@
                 </div>
 
                 <div class="team">
-                    <h3>Hvem står bag?</h3>
-                    <p>[Navn], [Titel]. Erfaring fra gymnastikken, coaching og undervisning. Passioneret om at skabe udvikling og trivsel hos andre.</p>
+                    <h3 class='h3'>Hvem står bag?</h3>
+                    <div class="persons">
+                        <div class="person">
+                            <img src="img/2535ff3379fd86d6e3406d7e47490331.jpg" alt="">
+                            <div class="text">
+                                <h3 class="name">People 1</h3>
+                                <p class="info">Director</p>
+                                <p class="description">Erfaring fra gymnastikken, coaching og undervisning. Passioneret om at skabe udvikling og trivsel hos andre.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="person">
+                            <img src="img/f7d2519d0f3f71261c07c01b7f8e2134.jpg" alt="">
+                            <div class="text">
+                                <h3 class="name">People 2</h3>
+                                <p class="info">Director</p>
+                                <p class="description">Erfaring fra gymnastikken, coaching og undervisning. Passioneret om at skabe udvikling og trivsel hos andre.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -234,28 +265,31 @@
         <section id="kontakt" class="contact">
             <div class="container">
                 <h2>Kontakt os</h2>
-                <p>Har du spørgsmål eller ønsker du at booke et forløb?</p>
+                <div class="kontakt-container">
 
-                <div class="contact-info">
-                    <p><i class="fas fa-phone"></i> Telefon: [telefonnummer]</p>
-                    <p><i class="fas fa-envelope"></i> E-mail: [e-mail]</p>
+                    <div class="contact-info kontakt-container-item">
+                        <h3>Har du spørgsmål eller ønsker du at booke et forløb?</h3>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i><p> [telefonnummer]</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i><p> [e-mail]</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form kontakt-container-item">
+                        <div class="form-group">
+                            <input type="text" id="navn" name="navn" required placeholder='Navn'>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder='E-mail'>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="besked" name="besked" required placeholder='Besked:'></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send besked</button>
+                    </form>
                 </div>
-
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="navn">Navn:</label>
-                        <input type="text" id="navn" name="navn" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="besked">Besked:</label>
-                        <textarea id="besked" name="besked" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Send besked</button>
-                </form>
             </div>
         </section>
     </main>
