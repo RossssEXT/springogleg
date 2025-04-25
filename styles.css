@@ -51,9 +51,7 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
+    height: 40px;
 }
 
 .menu {
@@ -475,8 +473,6 @@ footer {
 .intro-image {
     width: 300px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     animation: fadeIn 1s ease-out;
 }
 
