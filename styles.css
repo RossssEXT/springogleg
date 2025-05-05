@@ -416,7 +416,8 @@ footer {
     left: 0;
     width: 1px;
     height: 200px;
-    background-color: var(--text-color);
+    background-color: transparent;
+    
 }
 
 .values li.center::before {
@@ -549,6 +550,68 @@ sl-carousel {
     border-radius: 15px;
 }
 
+@media (max-width:1100px) {
+    sl-carousel {
+        width: 100%;
+    }
+
+    .card-carousel {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-width: 940px) {
+    sl-carousel {
+        height: 500px;
+    }
+
+    .card-carousel {
+        gap: 30px;
+    }
+
+    .card-carousel .info {
+        width: 50%;
+    }
+
+    .card-carousel .img {
+        height: 100%;
+        width: 50%;
+    }
+
+    .card-carousel img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .card-carousel {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .card-carousel .info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-carousel .img {
+        width: 100%;
+        height: 300px;
+    }
+
+    sl-carousel {
+        height: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-carousel .img {
+        height: 200px;
+    }
+}
+
 .persons {
     display: flex;
     gap: 4rem;
@@ -586,6 +649,47 @@ sl-carousel {
 .person .info {
     font-size: 1rem;
     margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .person {
+        width: 250px;
+        height: auto;
+    }
+
+    .person img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .person {
+        width: 350px;
+    }
+
+    .person img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .persons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width:440px) {
+    .person {
+        width: 250px;
+    }
+
+    .person img {
+        width: 250px;
+        height: 300px;
+    }
 }
 
 .kontakt-container {
@@ -655,9 +759,29 @@ sl-carousel {
     width: 100%;
     border: none;
     font-size: 1rem;
+    min-width: 0;
 }
 
 footer p {
     font-size: 1rem;
     font-weight: 500;
+}
+
+@media (max-width: 680px) {
+    .contact-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    } 
+}
+
+@media (max-width: 600px) {
+    .kontakt-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }   
+
+    .kontakt-container-item { 
+        width: 100%;
+    }
 }
