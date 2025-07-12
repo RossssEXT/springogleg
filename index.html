@@ -266,14 +266,26 @@
             <div class="container">
                 <h2>Kontakt os</h2>
                 <div class="kontakt-container">
-
                     <div class="contact-info kontakt-container-item">
+                        <style>
+                            .plain-link {
+                                color: inherit;
+                                text-decoration: none;
+                            }
+
+                            .plain-link:hover {
+                                text-decoration: underline;
+                            }
+                        </style>
+
                         <h3>Har du spørgsmål eller ønsker du at booke et forløb?</h3>
                         <div class="contact-info-item">
-                            <i class="fas fa-phone"></i><p> [telefonnummer]</p>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+4521293986" class="plain-link" aria-label="Ring til os på telefon +45 21 29 39 86">+45 21 29 39 86</a>
                         </div>
                         <div class="contact-info-item">
-                            <i class="fas fa-envelope"></i><p> [e-mail]</p>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:kontakt@springogleg.dk" class="plain-link" aria-label="Send en e-mail til kontakt@springogleg.dk">kontakt@springogleg.dk</a>
                         </div>
                     </div>
 
