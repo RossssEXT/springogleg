@@ -772,6 +772,10 @@ footer p {
         font-size: 1.4rem;
         margin-bottom: 20px;
     } 
+
+    .intro-image {
+        width: 300px;
+    }
 }
 
 @media (max-width: 600px) {
