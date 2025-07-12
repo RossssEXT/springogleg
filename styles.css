@@ -623,7 +623,7 @@ sl-carousel {
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 650px;
+    height: 600px;
 }
 
 .person img {
