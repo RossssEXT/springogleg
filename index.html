@@ -258,7 +258,7 @@
                         </div>
 
                         <div class="person">
-                            <img src="img/headshot_2_1.jpg" alt="">
+                            <img src="img/3person.png" alt="">
                             <div class="text">
                                 <h3 class="name">Joachim Skou Larsen </h3>
                                 <p class="info">Stifter</p>
@@ -303,7 +303,7 @@
                         </div>
                     </div>
 
-                    <form class="contact-form kontakt-container-item">
+                    <form class="contact-form kontakt-container-item" id="contact-form">
                         <div class="form-group">
                             <input type="text" id="navn" name="navn" required placeholder='Navn'>
                         </div>
@@ -314,6 +314,10 @@
                             <textarea id="besked" name="besked" required placeholder='Besked'></textarea>
                         </div>
                         <button type="submit" class="cta-button">Send besked</button>
+
+                        <div class="error success" id="status">
+
+                        </div>
                     </form>
                 </div>
             </div>
@@ -327,6 +331,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="form.js"></script>
     <script>
     // Add scroll reveal animations
     const revealElements = document.querySelectorAll('section');

@@ -789,3 +789,17 @@ footer p {
         width: 100%;
     }
 }
+
+#status {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+#status.error {
+    color: #EF302B;
+}
+
+#status.success {
+    color: #59D88F;
+}

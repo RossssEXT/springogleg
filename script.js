@@ -34,28 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-
-            // Here you would typically send the form data to a server
-            console.log('Form submitted:', formObject);
-            
-            // Show success message
-            alert('Tak for din besked! Vi vender tilbage til dig snarest.');
-            this.reset();
-        });
-    }
-
     // Add scroll reveal animations
     const revealElements = document.querySelectorAll('section');
     const revealOptions = {
